@@ -1,0 +1,113 @@
+/* Style the footer section */
+.footer {
+    background-color: #3C4836; 
+    color: #F0F0F0; 
+    padding: 5rem 0;
+}
+
+/* Style the footer container */
+.footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Style the footer top section */
+.footer .footer-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+/* Style the logo */
+.footer .logo {
+    flex: 1;
+    margin-right: 2rem;
+}
+
+/* Style the contact info */
+.footer .contact-info {
+    flex: 1;
+}
+
+/* Style contact info items */
+.footer .contact-info p {
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+/* Style navigation */
+.footer .navigation {
+    flex: 1;
+    text-align: left;
+}
+
+/* Style navigation list */
+.footer .navigation ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Style navigation list items */
+.footer .navigation li {
+    margin-bottom: 0.5rem;
+}
+
+/* Style navigation links */
+.footer .navigation a {
+    color: #F0F0F0; 
+    text-decoration: none;
+}
+
+/* Style newsletter */
+.footer .newsletter {
+    flex: 1;
+    text-align: left;
+}
+
+/* Style newsletter form */
+.footer .newsletter form {
+    display: flex;
+}
+
+/* Style newsletter input */
+.footer .newsletter input[type="email"] {
+    flex: 1;
+    padding: 1rem;
+    border: 1px solid #F0F0F0; 
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+
+/* Style newsletter submit button */
+.footer .newsletter button[type="submit"] {
+    background-color: #F0F0F0; 
+    color: #3C4836;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style footer bottom section */
+.footer .footer-bottom {
+    text-align: center;
+}
+
+/* Style footer bottom links */
+.footer .footer-bottom ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Style footer bottom list items */
+.footer .footer-bottom li {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+/* Style footer bottom links */
+.footer .footer-bottom a {
+    color: #F0F0F0; 
+    text-decoration: none;
+}
