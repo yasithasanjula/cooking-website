@@ -1,0 +1,21 @@
+/* Style the navbar */
+.navbar {
+    background-color: #fff; 
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+/* Style the logo */
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Style the navigation links */
+.navbar .nav-links a {
+    color: #333; 
+    text-decoration: none;
+    margin: 0 1rem;
+}
