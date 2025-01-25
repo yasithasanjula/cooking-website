@@ -1,0 +1,24 @@
+.chef-bio {
+    background-color: #F0F0F0; 
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.chef-bio h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.chef-bio p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.chef-bio button {
+    background-color: #3C4836; 
+    color: #F0F0F0; 
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
