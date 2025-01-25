@@ -1,0 +1,18 @@
+/* Style the What's Cooking? section */
+.whats-cooking {
+    background-color: #F0F0F0; 
+    padding: 5rem 0;
+    text-align: center;
+}
+
+/* Style the section heading */
+.whats-cooking h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Style the section paragraphs */
+.whats-cooking p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
