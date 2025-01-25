@@ -1,0 +1,39 @@
+/* Style the class options section */
+.class-options {
+    background-color: #f0f0f0;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+/* Style the class options section heading */
+.class-options h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Style the class cards */
+.class-options .class-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Style individual class cards */
+.class-options .class-card {
+    width: 30%; 
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Style class card images */
+.class-options .class-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* Style class card titles */
+    .class-options .class-card h3 {
+    margin: 0;
+}
