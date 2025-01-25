@@ -1,0 +1,54 @@
+/* Style the contact form section */
+.contact-form {
+    background-color: #F0F0F0; 
+    padding: 5rem 0;
+    text-align: center;
+}
+
+/* Style the section heading */
+.contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Style the contact information */
+.contact-form p {
+    margin-bottom: 2rem;
+}
+
+/* Style the form */
+.contact-form form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Style form groups */
+.contact-form .form-group {
+    margin-bottom: 1rem;
+}
+
+/* Style form labels */
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Style form inputs */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style the submit button */
+.contact-form button[type="submit"] {
+    background-color: #F0F0F0; 
+    color: #3C4836; 
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
