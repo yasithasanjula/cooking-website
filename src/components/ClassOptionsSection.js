@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './ClassDescriptionSection.css';
+import './../styles/ClassDescriptionSection.css';
 
 function ClassDescriptionSection() {
   const [slideIndex, setSlideIndex] = useState(0);

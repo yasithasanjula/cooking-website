@@ -3,8 +3,6 @@ import './App.css';
 
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
-import AboutSection from './components/AboutSection';
-import FoodGallery from './components/FoodGallery';
 import TestimonialSection from './components/TestimonialSection';
 import ChefBioSection from './components/ChefBioSection';
 import ClassOptionsSection from './components/ClassOptionsSection';

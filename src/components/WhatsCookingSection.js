@@ -1,5 +1,5 @@
 import React from 'react';
-import './WhatsCookingSection.css';
+import './../styles/WhatsCookingSection.css';
 
 function WhatsCookingSection() {
   return (

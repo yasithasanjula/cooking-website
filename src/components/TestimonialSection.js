@@ -1,5 +1,5 @@
 import React from 'react';
-import './TestimonialSection.css';
+import './../styles/TestimonialSection.css';
 
 function TestimonialSection() {
   return (

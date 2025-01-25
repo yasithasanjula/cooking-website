@@ -1,5 +1,5 @@
 import React from 'react';
-import './ChefBioSection.css';
+import './../styles/ChefBioSection.css';
 
 function ChefBioSection() {
   return (

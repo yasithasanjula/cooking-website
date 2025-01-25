@@ -1,21 +1,74 @@
-/* Style the navbar */
 .navbar {
-    background-color: #fff; 
+    background-color: #F0F0F0; /* Set your desired background color */
     padding: 1rem 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Align items horizontally */
     align-items: center;
-}
+  }
   
-/* Style the logo */
-.navbar .logo {
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    font-family: serif; /* Adjust font as needed */
     font-size: 1.5rem;
-    font-weight: bold;
-}
-
-/* Style the navigation links */
-.navbar .nav-links a {
-    color: #333; 
+    color: #3C4836; /* Set your desired text color */
+  }
+  
+  .logo span {
+    font-size: 1rem;
+  }
+  
+  .menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .menu-icon span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #3C4836; /* Set your desired color */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .menu-icon.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .menu-icon.open span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-icon.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 2rem; /* Add gap between buttons */
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .nav-links.open {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .nav-links a {
+    font-family: serif; /* Adjust font as needed */
+    font-size: 1rem;
+    color: #3C4836; /* Set your desired link color */
     text-decoration: none;
-    margin: 0 1rem;
-}
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #F0F0F0; /* Set your desired background color */
+  }
