@@ -18,13 +18,11 @@ function App() {
     <div className="App">
       <Navbar />
       <HeroSection />
-      <AboutSection />
-      <FoodGallery />
-      <TestimonialSection />
       <ChefBioSection />
       <ClassOptionsSection />
       <WhatsCookingSection />
       <ClassDescriptionSection />
+      <TestimonialSection />
       <ContactFormSection />
       <FooterSection />
     </div>
