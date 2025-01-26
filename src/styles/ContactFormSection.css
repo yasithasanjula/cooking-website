@@ -1,54 +1,62 @@
 /* Style the contact form section */
 .contact-form {
-    background-color: #F0F0F0; 
-    padding: 5rem 0;
-    text-align: center;
+  background-color: #ffffff; /* Dark green background */
+  color: #f0f0f0; /* Light beige text color */
+  padding: 5rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content to the top */
+  align-items: center; /* Center items horizontally */
 }
 
 /* Style the section heading */
 .contact-form h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #06060684; /* Light beige text color */
+  text-align: center; /* Center the heading text horizontally */
+  margin-top: 0; /* Remove top margin to align it to the top */
 }
 
 /* Style the contact information */
 .contact-form p {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
+  color: #06060684; /* Light beige text color */
 }
 
 /* Style the form */
 .contact-form form {
-    max-width: 500px;
-    margin: 0 auto;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 /* Style form groups */
 .contact-form .form-group {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 /* Style form labels */
 .contact-form label {
-    display: block;
-    margin-bottom: 0.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #06060684; /* Light beige text color */
 }
 
 /* Style form inputs */
 .contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-    width: 100%;
-    padding: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.contact-form input[type="email"] {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff; /* White background for inputs */
 }
 
-/* Style the submit button */
-.contact-form button[type="submit"] {
-    background-color: #F0F0F0; 
-    color: #3C4836; 
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+/* Style the textarea */
+.contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }

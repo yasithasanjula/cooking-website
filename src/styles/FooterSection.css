@@ -1,113 +1,47 @@
-/* Style the footer section */
 .footer {
-    background-color: #3C4836; 
-    color: #F0F0F0; 
-    padding: 5rem 0;
+  background-color: #3c4836; /* Dark green background */
+  color: #f0f0f0; /* Light beige text color */
+  padding: 5rem 0;
+  display: flex;
+  justify-content: space-between;
 }
 
-/* Style the footer container */
-.footer .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.footer-left {
+  flex: 1;
+  text-align: left;
 }
 
-/* Style the footer top section */
-.footer .footer-top {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2rem;
+.footer-left .logo {
+  color: #[accent-color]; /* Use the accent color for the logo */
+  margin-bottom: 1rem;
 }
 
-/* Style the logo */
-.footer .logo {
-    flex: 1;
-    margin-right: 2rem;
+.footer-right {
+  flex: 1;
+  text-align: right;
 }
 
-/* Style the contact info */
-.footer .contact-info {
-    flex: 1;
-}
-
-/* Style contact info items */
-.footer .contact-info p {
-    margin: 0;
-    margin-bottom: 0.5rem;
-}
-
-/* Style navigation */
 .footer .navigation {
-    flex: 1;
-    text-align: left;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-/* Style navigation list */
-.footer .navigation ul {
-    list-style: none;
-    padding: 0;
-}
-
-/* Style navigation list items */
-.footer .navigation li {
-    margin-bottom: 0.5rem;
-}
-
-/* Style navigation links */
-.footer .navigation a {
-    color: #F0F0F0; 
-    text-decoration: none;
-}
-
-/* Style newsletter */
 .footer .newsletter {
-    flex: 1;
-    text-align: left;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-/* Style newsletter form */
-.footer .newsletter form {
-    display: flex;
-}
-
-/* Style newsletter input */
-.footer .newsletter input[type="email"] {
-    flex: 1;
-    padding: 1rem;
-    border: 1px solid #F0F0F0; 
-    border-radius: 5px;
-    margin-right: 1rem;
-}
-
-/* Style newsletter submit button */
+/* Style the newsletter submit button */
 .footer .newsletter button[type="submit"] {
-    background-color: #F0F0F0; 
-    color: #3C4836;
-    padding: 1rem 1.5rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Style footer bottom section */
-.footer .footer-bottom {
-    text-align: center;
-}
-
-/* Style footer bottom links */
-.footer .footer-bottom ul {
-    list-style: none;
-    padding: 0;
-}
-
-/* Style footer bottom list items */
-.footer .footer-bottom li {
-    display: inline-block;
-    margin: 0 1rem;
+  background-color: #f0f0f0; /* Reverse button colors */
+  color: #3c4836; /* Reverse button colors */
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 /* Style footer bottom links */
 .footer .footer-bottom a {
-    color: #F0F0F0; 
-    text-decoration: none;
+  color: #f0f0f0; /* Maintain light beige color for links */
 }

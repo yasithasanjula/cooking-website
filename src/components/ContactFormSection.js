@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import './../styles/ContactFormSection.css';
+import React, { useState } from "react";
+import "../styles/ContactFormSection.css"; // Import the CSS file
 
 function ContactFormSection() {
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    message: '',
+    firstName: "",
+    lastName: "",
+    email: "",
+    message: "",
   });
 
   const handleChange = (event) => {
@@ -18,7 +18,7 @@ function ContactFormSection() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Here you would typically handle form submission, 
+    // Here you would typically handle form submission,
     // such as sending the data to a server using fetch or axios.
     console.log(formData); // For now, log the form data to the console
   };

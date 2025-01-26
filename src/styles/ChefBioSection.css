@@ -1,24 +1,79 @@
 .chef-bio {
-    background-color: #F0F0F0; 
-    padding: 5rem 0;
-    text-align: center;
+  background-color: #f0f0f0;
+  padding: 5rem 0;
+  text-align: center; /* Keep text alignment centered for headings on smaller screens */
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.chef-bio__content {
+  display: flex;
+  flex-direction: row; /* Arrange items in a row */
+  align-items: center; /* Center items vertically */
+  justify-content: flex-end; /* Align items to the right */
+  gap: 2rem; /* Add consistent spacing between items */
+}
+
+.chef-bio__image-container {
+  width: 300px;
+  height: 300px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.chef-bio__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chef-bio__text {
+  max-width: 600px;
+  text-align: left;
 }
 
 .chef-bio h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .chef-bio p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
 }
 
 .chef-bio button {
-    background-color: #3C4836; 
-    color: #F0F0F0; 
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: #3c4836;
+  color: #f0f0f0;
+  padding: 1.2rem 2.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.chef-bio button:hover {
+  background-color: #55624d;
+}
+
+/* Add responsiveness for smaller screens */
+@media (max-width: 768px) {
+  .chef-bio__content {
+    flex-direction: column-reverse; /* Reverse the order on smaller screens */
+    text-align: center;
+  }
+
+  .chef-bio__image-container {
+    margin-bottom: 2rem;
+  }
+
+  .chef-bio__text {
+    margin: 0 auto;
+    text-align: center;
+  }
 }
