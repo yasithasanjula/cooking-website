@@ -1,7 +1,9 @@
 .chef-bio {
-  background-color: #f0f0f0;
+  background-color: #f4f7ed;
   padding: 5rem 0;
-  text-align: center; /* Keep text alignment centered for headings on smaller screens */
+  display: flex; /* Use flexbox for easier layout */
+  justify-content: space-between; /* Space between image and text */
+  align-items: center;
 }
 
 .container {
@@ -11,16 +13,48 @@
 
 .chef-bio__content {
   display: flex;
-  flex-direction: row; /* Arrange items in a row */
-  align-items: center; /* Center items vertically */
-  justify-content: flex-end; /* Align items to the right */
-  gap: 2rem; /* Add consistent spacing between items */
+}
+
+.chef-bio__text {
+  flex: 1; /* Allow text to take up remaining space */
+  text-align: left;
+  margin-right: 2rem; /* Add some spacing between text and image */
+}
+
+.chef-bio h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.chef-bio p {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.chef-bio__button {
+  padding-left: 40%;
+}
+
+.chef-bio button {
+  padding: 0.9rem 2rem;
+  background-color: #f4f7ed;
+  border: none;
+  border-radius: 45px;
+  outline: 2px solid #39492e;
+  cursor: pointer;
+}
+
+.chef-bio button:hover {
+  background-color: #f1c376;
+  outline-color: #39492e;
 }
 
 .chef-bio__image-container {
   width: 300px;
   height: 300px;
-  flex-shrink: 0;
   overflow: hidden;
 }
 
@@ -31,56 +65,19 @@
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.chef-bio__text {
-  max-width: 600px;
-  text-align: left;
-}
-
-.chef-bio h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.chef-bio p {
-  font-size: 1.3rem;
-  line-height: 1.6;
-  margin-bottom: 2.5rem;
-}
-
-.chef-bio button {
-  padding: 1.2rem 2.5rem;
-  border: none;
-  border-radius: 5px;
-  outline: 2px solid #55624d; /* Add a rounded outline */
-  cursor: pointer;
-  transition: background-color 0.3s ease, outline-color 0.3s ease; /* Smooth transition for outline */
-}
-
-.chef-bio button:hover {
-  background-color: #f1c376;
-  outline-color: #39492e; /* Change outline color on hover */
-}
-
-/* Add responsiveness for smaller screens */
+/* Responsive Design */
 @media (max-width: 768px) {
+  .chef-bio {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    text-align: center;
+  }
+
   .chef-bio__content {
-    display: flex;
-    flex-direction: row; /* Arrange items in a row */
-    align-items: center; /* Center items vertically */
-    justify-content: space-between; /* Distribute space evenly between text and image */
-    gap: 2rem; /* Add consistent spacing between items */
+    flex-direction: column;
+    align-items: center;
   }
 
   .chef-bio__image-container {
-    width: 300px;
-    height: 300px;
-    flex-shrink: 0;
-    overflow: hidden;
-    margin-left: auto; /* Push the image to the right */
-  }
-
-  .chef-bio__text {
-    margin: 0 auto;
-    text-align: center;
+    margin-top: 2rem; /* Add space above the image */
   }
 }

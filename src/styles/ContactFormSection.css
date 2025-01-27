@@ -8,8 +8,8 @@
   flex-direction: column;
   justify-content: flex-start; /* Align content to the top */
   align-items: center; /* Center items horizontally */
-  width: 1500px; /* Fixed width */
-  height: 827px; /* Fixed height */
+  width: 100%; /* Fixed width */
+  height: 100%; /* Fixed height */
   top: 4538px; /* Position from top, requires position: relative/absolute */
   left: -3px; /* Position from left, requires position: relative/absolute */
   gap: 0px; /* No gap between flex items */

@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between; /* Space between items */
   width: 100%; /* Fixed width */
-  height: 475px; /* Fixed height */
+  height: 100%; /* Fixed height */
   top: 5365px; /* Position from the top, requires positioning */
   gap: 0px; /* No gap between flex items */
 }

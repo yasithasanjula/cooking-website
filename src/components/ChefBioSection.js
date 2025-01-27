@@ -7,13 +7,6 @@ function ChefBioSection() {
     <section className="chef-bio">
       <div className="container">
         <div className="chef-bio__content">
-          <div className="chef-bio__image-container">
-            <img
-              src={chefImage}
-              alt="Chef [Chef's Name]"
-              className="chef-bio__image"
-            />
-          </div>
           <div className="chef-bio__text">
             <h2>Meet The Chef</h2>
             <p>
@@ -22,7 +15,16 @@ function ChefBioSection() {
               world. Join me in my kitchen to cook, laugh, and explore the rich
               heritage of Sri Lanka's food culture.
             </p>
-            <button>CONTACT →</button>
+            <div className="chef-bio__button">
+              <button>CONTACT →</button>
+            </div>
+          </div>
+          <div className="chef-bio__image-container">
+            <img
+              src={chefImage}
+              alt="Chef [Chef's Name]"
+              className="chef-bio__image"
+            />
           </div>
         </div>
       </div>
