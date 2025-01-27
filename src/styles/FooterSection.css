@@ -1,9 +1,13 @@
 .footer {
-  background-color: #3c4836; /* Dark green background */
-  color: #f0f0f0; /* Light beige text color */
+  background-color: #606c5d; /* Updated background color */
+  color: #f0f0f0; /* Text color */
   padding: 5rem 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Space between items */
+  width: 100%; /* Fixed width */
+  height: 475px; /* Fixed height */
+  top: 5365px; /* Position from the top, requires positioning */
+  gap: 0px; /* No gap between flex items */
 }
 
 .footer-left {
