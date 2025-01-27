@@ -48,28 +48,35 @@
 }
 
 .chef-bio button {
-  background-color: #3c4836;
-  color: #f0f0f0;
   padding: 1.2rem 2.5rem;
   border: none;
   border-radius: 5px;
+  outline: 2px solid #55624d; /* Add a rounded outline */
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, outline-color 0.3s ease; /* Smooth transition for outline */
 }
 
 .chef-bio button:hover {
-  background-color: #55624d;
+  background-color: #f1c376;
+  outline-color: #39492e; /* Change outline color on hover */
 }
 
 /* Add responsiveness for smaller screens */
 @media (max-width: 768px) {
   .chef-bio__content {
-    flex-direction: column-reverse; /* Reverse the order on smaller screens */
-    text-align: center;
+    display: flex;
+    flex-direction: row; /* Arrange items in a row */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Distribute space evenly between text and image */
+    gap: 2rem; /* Add consistent spacing between items */
   }
 
   .chef-bio__image-container {
-    margin-bottom: 2rem;
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+    overflow: hidden;
+    margin-left: auto; /* Push the image to the right */
   }
 
   .chef-bio__text {

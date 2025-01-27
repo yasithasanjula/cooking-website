@@ -1,7 +1,7 @@
 /* Style the contact form section */
 .contact-form {
-  background-color: #ffffff; /* Background color */
-  color: #f0f0f0; /* Text color */
+  background-color: #f4f7ed; /* Background color */
+  color: #606c5d; /* Text color */
   padding: 5rem 0;
   text-align: center;
   display: flex;
@@ -22,13 +22,13 @@
   display: flex;
   justify-content: center; /* Centers horizontally */
   align-items: center; /* Centers vertically */
-  color: #06060684; /* Light beige text color */
+  color: #606c5d; /* Light beige text color */
 }
 
 /* Style the contact information */
 .contact-form p {
   margin-bottom: 2rem;
-  color: #06060684; /* Light beige text color */
+  color: #00000078; /* Light beige text color */
 }
 
 /* Style the form */
@@ -46,7 +46,7 @@
 .contact-form label {
   display: block;
   margin-bottom: 0.5rem;
-  color: #06060684; /* Light beige text color */
+  color: #00000078; /* Light beige text color */
 }
 
 /* Style form inputs */
@@ -54,7 +54,7 @@
 .contact-form input[type="email"] {
   width: 100%;
   padding: 1rem;
-  border: 1px solid #ccc;
+  border: 1px solid #606c5d;
   border-radius: 5px;
   background-color: #fff; /* White background for inputs */
 }
