@@ -105,6 +105,7 @@
   cursor: pointer;
   outline-color: #f7e6c4;
   outline: 2px solid #f7e6c4;
+  margin-bottom: 2rem;
 }
 
 .class-description .buttons button:hover {
@@ -121,26 +122,4 @@
 .class-description .middle-image-container img {
   max-width: 300%;
   height: 300%;
-}
-
-/* Responsive Design for smaller screens */
-@media (max-width: 768px) {
-  .class-description {
-    padding: 3rem 0;
-  }
-
-  .class-description .slider {
-    height: 30%;
-  }
-
-  .class-description .buttons {
-    flex-direction: column;
-    bottom: 5px;
-  }
-
-  .class-description .left-column,
-  .class-description .center-column,
-  .class-description .right-column {
-    width: 30%;
-  }
 }

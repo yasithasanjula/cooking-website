@@ -41,6 +41,7 @@
 .chef-bio button {
   padding: 0.9rem 2rem;
   background-color: #f4f7ed;
+  color: #39492e;
   border: none;
   border-radius: 45px;
   outline: 2px solid #39492e;
@@ -66,18 +67,3 @@
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-  .chef-bio {
-    flex-direction: column; /* Stack elements vertically on smaller screens */
-    text-align: center;
-  }
-
-  .chef-bio__content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .chef-bio__image-container {
-    margin-top: 2rem; /* Add space above the image */
-  }
-}

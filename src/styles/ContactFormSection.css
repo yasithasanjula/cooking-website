@@ -1,68 +1,69 @@
-/* Style the contact form section */
 .contact-form {
-  background-color: #f4f7ed; /* Background color */
-  color: #606c5d; /* Text color */
+  background-color: #ffffff; /* Light gray background */
   padding: 5rem 0;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start; /* Align content to the top */
-  align-items: center; /* Center items horizontally */
-  width: 100%; /* Fixed width */
-  height: 100%; /* Fixed height */
-  top: 4538px; /* Position from top, requires position: relative/absolute */
-  left: -3px; /* Position from left, requires position: relative/absolute */
-  gap: 0px; /* No gap between flex items */
-  /* Fully transparent */
 }
 
-/* Style the section heading */
-.contact-form h2 {
-  font-size: 2rem;
-  display: flex;
-  justify-content: center; /* Centers horizontally */
-  align-items: center; /* Centers vertically */
-  color: #606c5d; /* Light beige text color */
-}
-
-/* Style the contact information */
-.contact-form p {
-  margin-bottom: 2rem;
-  color: #00000078; /* Light beige text color */
-}
-
-/* Style the form */
-.contact-form form {
-  max-width: 500px;
+.container {
+  max-width: 960px;
   margin: 0 auto;
 }
 
-/* Style form groups */
-.contact-form .form-group {
+.contact-form form {
+  padding: 2rem;
+  background-color: #fff; /* White background for the form */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-form h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #333; /* Dark gray text color */
+}
+
+.contact-form p {
+  color: #666; /* Gray text color for contact info */
+  margin-bottom: 2rem;
+}
+
+.form-group {
   margin-bottom: 1rem;
 }
 
-/* Style form labels */
-.contact-form label {
+label {
   display: block;
   margin-bottom: 0.5rem;
-  color: #00000078; /* Light beige text color */
+  color: #333; /* Dark gray text color */
 }
 
-/* Style form inputs */
-.contact-form input[type="text"],
-.contact-form input[type="email"] {
-  width: 100%;
-  padding: 1rem;
-  border: 1px solid #606c5d;
-  border-radius: 5px;
-  background-color: #fff; /* White background for inputs */
-}
-
-/* Style the textarea */
-.contact-form textarea {
+input[type="text"],
+input[type="email"],
+textarea {
   width: 100%;
   padding: 1rem;
   border: 1px solid #ccc;
   border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  background-color: #55624d; /* Dark gray background color for button */
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #39492e; /* Darker gray on hover */
 }
