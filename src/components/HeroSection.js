@@ -7,7 +7,7 @@ function HeroSection() {
       <div className="container">
         <div className="vertical-text">
           <span className="small-text">04</span>
-          <div className="divider"></div>
+          <span className="divider">/</span>
           <span className="large-text">02</span>
         </div>
         <div className="content">

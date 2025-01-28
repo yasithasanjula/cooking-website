@@ -31,7 +31,7 @@
 
 .menu-icon {
   position: absolute;
-  left: 1rem; /* Position menu icon to the left */
+  left: -10rem; /* Position menu icon to the left */
   top: 50%;
   transform: translateY(-50%);
   display: flex;
@@ -64,7 +64,7 @@
 
 .nav-links {
   position: absolute;
-  right: 1rem; /* Position buttons to the right */
+  right: -10rem; /* Position buttons to the right */
   top: 50%;
   transform: translateY(-50%);
   display: flex;

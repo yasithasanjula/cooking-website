@@ -18,37 +18,48 @@ function ContactFormSection() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Handle form submission (e.g., send data to server)
     console.log(formData);
   };
 
   return (
     <section className="contact-form">
+      {/* Header Section */}
+      <div className="header-section">
+        <h2 className="form-title">At Your Service</h2>
+        <p className="contact-details">
+          Tel: 123-456-7890 | Email: grand39cooking@gmail.com
+        </p>
+        <p className="subheading">
+          Tell me a little about your event so I can begin the creation process
+        </p>
+      </div>
+
+      {/* Form Section */}
       <div className="container">
-        <h2>At Your Service</h2>
-        <p>Tel: 123-456-7890 | Email: grand39cooking@gmail.com</p>
-        <form onSubmit={handleSubmit}>
-          <div className="form-group">
-            <label htmlFor="firstName">First Name *</label>
-            <input
-              type="text"
-              id="firstName"
-              name="firstName"
-              value={formData.firstName}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="lastName">Last Name *</label>
-            <input
-              type="text"
-              id="lastName"
-              name="lastName"
-              value={formData.lastName}
-              onChange={handleChange}
-              required
-            />
+        <form onSubmit={handleSubmit} className="form-wrapper">
+          <div className="form-group-row">
+            <div className="form-group">
+              <label htmlFor="firstName">First name *</label>
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                value={formData.firstName}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="lastName">Last name *</label>
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                value={formData.lastName}
+                onChange={handleChange}
+                required
+              />
+            </div>
           </div>
           <div className="form-group">
             <label htmlFor="email">Email *</label>
@@ -70,7 +81,11 @@ function ContactFormSection() {
               onChange={handleChange}
             />
           </div>
-          <button type="submit">SUBMIT</button>
+          <div className="submit-btn-wrapper">
+            <button type="submit" className="submit-btn">
+              SUBMIT
+            </button>
+          </div>
         </form>
       </div>
     </section>

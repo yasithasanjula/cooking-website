@@ -13,12 +13,12 @@
 /* Style the section heading */
 .whats-cooking h2 {
   font-family: Georgia;
-  margin-bottom: 20%;
-  margin-right: 10%;
-  font-size: 45px;
+  margin-bottom: 10%;
+  margin-right: 20%;
+  margin-left: 5%;
+  font-size: 50px;
   font-weight: 300;
   line-height: 77.26px;
-  text-align: left;
   text-align: center;
   color: #606c5d; /* Text color */
 }
