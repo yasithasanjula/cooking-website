@@ -29,24 +29,37 @@
   gap: 1rem;
   height: auto;
 }
+.arrow-symbol {
+  margin-right: 260%; /* Adjusted margin */
+  transform: rotate(90deg) scale(3); /* Scale factor of 3 */
+  font-size: 48px;
+  margin-bottom: 50%;
+  color: #f7e6c4; /* Arrow color */
+  font-weight: bold; /* Make the arrow thicker */
+}
 
 .large-text {
-  font-size: 4rem; /* Larger font size for "02" */
+  font-size: 4rem;
+  margin-right: 300%; /* Larger font size for "02" */
   font-weight: bold;
-  color: #f7d083; /* Golden color for numbers */
+  color: #f7e6c4; /* Golden color for numbers */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow */
 }
 
 .divider {
-  transform: rotate(290deg);
-  color: #f7d083;
-  background-color: #f7d083;
+  margin-right: 300%; /* Reduced margin for a smaller space */
+  width: 50%; /* Reduced width for a smaller divider */
+  height: 3px; /* Added height for visible thickness */
+  transform: rotate(200deg);
+  color: #f7e6c4;
+  background-color: #f7e6c4;
 }
 
 .small-text {
+  margin-right: 300%;
   font-size: 2rem; /* Smaller font size for "04" */
   font-weight: bold;
-  color: #f7d083;
+  color: #f7e6c4;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -73,8 +86,9 @@
 
 .image-grid {
   display: grid;
+  margin-top: 50%;
   grid-template-columns: repeat(3, 1fr); /* 3 images in one row */
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .image-grid img {

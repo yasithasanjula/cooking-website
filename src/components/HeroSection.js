@@ -6,8 +6,9 @@ function HeroSection() {
     <section className="hero">
       <div className="container">
         <div className="vertical-text">
+          <div className="arrow-symbol">→</div>
           <span className="small-text">04</span>
-          <span className="divider">/</span>
+          <span className="divider"></span>
           <span className="large-text">02</span>
         </div>
         <div className="content">
