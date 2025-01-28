@@ -3,7 +3,7 @@
   background-color: #606c5d; /* Greenish-gray */
   color: #f0f0e8; /* Beige text */
   font-family: "Georgia", serif;
-  padding: 4rem 2rem;
+  padding: 3rem 2rem;
 }
 
 /* Footer Top Section */
@@ -18,7 +18,7 @@
 
 /* Left Section */
 .footer-left {
-  flex: 1;
+  flex: 0.8;
 }
 
 .footer-logo {
@@ -43,8 +43,8 @@
 }
 
 .newsletter-form button {
-  padding: 0.8rem 1rem;
-  margin-left: 0.5rem;
+  padding: 0.7rem 1rem;
+  margin-left: 0.8rem;
   background-color: #f0e2b6; /* Beige */
   color: #4a4a4a; /* Dark gray */
   border: none;
@@ -70,7 +70,7 @@
 
 .footer-links {
   list-style: none;
-  padding: 0;
+  padding: 9;
 }
 
 .footer-links li {
