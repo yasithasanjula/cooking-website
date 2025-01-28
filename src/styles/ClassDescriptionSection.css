@@ -1,4 +1,4 @@
-/* Style the class description section */
+/* General styles */
 .class-description {
   background-color: #606c5d;
   color: #fff4f4;
@@ -7,100 +7,47 @@
   align-items: center;
 }
 
-/* Style the left column */
+/* Left column */
 .class-description .left-column {
-  width: 15%;
+  width: 20%;
+  position: relative;
+  right: 150px;
 }
 
-/* Style the center column */
+/* Center column */
 .class-description .center-column {
   width: 80%;
   background-color: #606c5d;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; /* Align content to the left */
-}
-
-/* Style the right column */
-.class-description .right-column {
-  width: 15%;
-}
-
-/* Style the slider */
-.class-description .slider {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 100px;
-  background-color: #606c5d;
-}
-
-/* Style the left slider */
-.class-description .left-slider {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.5s ease-in-out;
-}
-
-/* Style the right slider */
-.class-description .right-slider {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column-reverse;
-  transition: transform 0.5s ease-in-out;
-}
-
-/* Style slider images */
-.class-description .slider img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-/* Style the content area */
-.class-description .center-column {
+  align-items: center;
   text-align: center;
 }
 
-/* Style the section heading */
 .class-description h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  align-items: center;
   font-family: "Georgia";
 }
 
-/* Style the section paragraph */
 .class-description p {
   font-size: 0.8rem;
   margin-bottom: 2rem;
 }
 
-/* Style the buttons container */
+/* Buttons */
 .class-description .buttons {
   display: flex;
   justify-content: flex-start;
 }
 
-/* Style the buttons */
 .class-description .buttons button {
   background-color: #606c5d;
   color: #f7e6c4;
   border-radius: 45px;
   padding: 1rem 2rem;
   border: none;
-
   margin-right: 1rem;
   cursor: pointer;
   outline-color: #f7e6c4;
@@ -113,13 +60,62 @@
   transform: scale(1.03);
 }
 
-/* Style the middle image container */
+/* Middle image */
 .class-description .middle-image-container {
   margin-bottom: 2rem;
 }
 
-/* Style the middle image */
 .class-description .middle-image-container img {
-  max-width: 300%;
-  height: 300%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Right column */
+.class-description .right-column {
+  width: 20%;
+  position: relative;
+  left: 150px;
+}
+
+/* Marquee Effect */
+.class-description .marquee {
+  overflow: hidden;
+  position: relative;
+  height: 100%; /* Takes full column height */
+}
+
+.class-description .marquee-content {
+  display: flex;
+  flex-direction: column;
+  animation: scroll-full 10s linear infinite;
+}
+
+.class-description .marquee-content.reverse {
+  animation: scroll-full-reverse 10s linear infinite;
+}
+
+@keyframes scroll-full {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes scroll-full-reverse {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.class-description .marquee-content img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 0; /* Seamless flow */
+  border-radius: 8px;
 }

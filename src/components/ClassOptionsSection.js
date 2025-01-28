@@ -35,7 +35,9 @@ const App = () => {
     <div className="container">
       <div
         className="background-container"
-        style={{ backgroundImage: `url(${backgroundImage})` }}
+        style={{
+          backgroundImage: `url(${backgroundImage})`,
+        }}
       >
         {cardsData.map((card, index) => (
           <Card key={index} imageSrc={card.imageSrc} title={card.title} />

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./../styles/ClassDescriptionSection.css";
 
 import image1 from "../images/image1.jpg";
@@ -10,37 +10,33 @@ import image6 from "../images/image6.jpg";
 import middleImage from "../images/middle_image.jpg";
 
 function ClassDescriptionSection() {
-  const [slideIndex, setSlideIndex] = useState(0);
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setSlideIndex((prevIndex) => (prevIndex + 1) % 6); // Cycle through 6 slides
-    }, 5000); // Change slide every 5 seconds
-
-    return () => clearInterval(intervalId);
-  }, []);
-
   const images = [image1, image2, image3, image4, image5, image6];
 
   return (
     <section className="class-description">
       <div className="container">
+        {/* Left Column */}
         <div className="left-column">
-          <div className="slider">
-            <div
-              className="left-slider"
-              style={{ transform: `translateY(-${slideIndex * 100}%)` }}
-            >
+          <div className="marquee">
+            <div className="marquee-content">
               {images.slice(0, 3).map((image, index) => (
                 <img key={index} src={image} alt={`Image ${index + 1}`} />
+              ))}
+              {images.slice(0, 3).map((image, index) => (
+                <img
+                  key={`duplicate-${index}`}
+                  src={image}
+                  alt={`Image ${index + 1}`}
+                />
               ))}
             </div>
           </div>
         </div>
 
+        {/* Center Column */}
         <div className="center-column">
           <h2>
-            Explore Sri Lanka's Rich <br></br> Flavors, Hands-On
+            Explore Sri Lanka's Rich <br /> Flavors, Hands-On
           </h2>
 
           <div className="middle-image-container">
@@ -59,14 +55,19 @@ function ClassDescriptionSection() {
           </div>
         </div>
 
+        {/* Right Column */}
         <div className="right-column">
-          <div className="slider">
-            <div
-              className="right-slider"
-              style={{ transform: `translateY(${slideIndex * -100}%)` }}
-            >
+          <div className="marquee">
+            <div className="marquee-content reverse">
               {images.slice(3).map((image, index) => (
                 <img key={index + 3} src={image} alt={`Image ${index + 4}`} />
+              ))}
+              {images.slice(3).map((image, index) => (
+                <img
+                  key={`duplicate-${index + 3}`}
+                  src={image}
+                  alt={`Image ${index + 4}`}
+                />
               ))}
             </div>
           </div>

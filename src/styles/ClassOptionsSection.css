@@ -1,22 +1,27 @@
-/* Style the container (with no background) */
+/* Style the container for the section */
 .container {
   display: flex;
   justify-content: center;
-  margin: 20px;
-  gap: 1rem;
+  margin: 0; /* Remove margin to align with viewport */
+  padding: 0; /* No padding for full coverage */
   width: 100%;
   height: 100%; /* Ensure full height */
 }
 
 /* Apply styling for the background container */
 .background-container {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  padding: 5rem 8rem;
   display: flex;
-  justify-content: space-around;
-  padding: 20px;
-  border-radius: 8px;
-  align-items: center; /* Center the cards vertically */
-  box-sizing: border-box; /* Prevents overflow and keeps padding inside */
-  width: 100%;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+
+  background-image: url("../images/background.jpg"); /* Path to your image */
+  position: relative;
 }
 
 /* Style individual card */
@@ -60,5 +65,10 @@
   .background-container {
     flex-direction: column; /* Stack the cards vertically on small screens */
     align-items: center;
+  }
+
+  .card {
+    width: 90%; /* Make cards more responsive on small screens */
+    max-width: 350px; /* Set a max width for cards */
   }
 }
